@@ -14,7 +14,7 @@ sections:
       text: |
         <br>
         
-        ** Discover Distribute and Store Valuable Mini Drama **
+        **Discover Distribute and Store Valuable Mini Drama**
   
   - block: collection
     content:
