@@ -7,70 +7,112 @@ type: landing
 sections:
   - block: hero
     content:
+      title: 
+      image:
+        filename: cover.1.png
+      cta:
+        label: Download
+        url: https://funon.xyz/download/
+        icon_pack: fas
+        icon: download
+      cta_alt:
+        label: Ask a question
+        url: https://discord.gg/z8wNYzc
       text: |
-        <br><br><br><br>
-        <font color=white size=45>**Discover Distribute and Store Valuable Mini Drama**</font>
-      buttons:
-        - title: down now
-          icon: arxiv
-          url: https://arxiv.org/abs/2304.01852
-        - title: join us
-          icon: youtube
-          url: https://youtube.com
+        <br><br><br>
+        <font size=32>
+        **Discover Distribute and Store Valuable Mini Drama.**
+        </font>
+        <br><br><br>
     design:
-      columns: '1'
-      background:
-        image: 
-          filename: coders.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
+      # Choose an optional background color, gradient, image, or video
       css_class: fullscreen
-  - block: markdown
+      background:
+        gradient_end: '#FFFFFF'
+        gradient_start: '#FFFFFF'
+        text_color_light: false
+  - block: slider
     content:
-      title:
-      subtitle: ''
-      text: |
-        <br><br><br><br><br><br><br><br>
-        <font color=white size=45><center>Decentralized Content Distribution Engine</center></font>
-      buttons:
-        - title: down now
-          icon: arxiv
-          url: https://arxiv.org/abs/2304.01852
-        - title: join us
-          icon: youtube
-          url: https://youtube.com
+      slides:
+        - align: center
+          background:
+            image:
+              filename: cover.2.png
+              filters:
+                brightness: 0.0
+            position: center
+            color: '#666'
     design:
-      columns: '1'
-      background:
-        image: 
-          filename: background.webp
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
-  - block: collection
+      slide_height: ''
+      is_fullscreen: true
+      loop: false
+      interval: 2000
+  - block: portfolio
+    id: projects
     content:
+      title: Drama Category
+      filters:
+        # Folders to display content from
+        folders:
+          - project
+        # Only show content with these tags
+        tags: []
+        # Exclude content with these tags
+        exclude_tags: []
+        # Which Hugo page kinds to show (https://gohugo.io/templates/section-templates/#page-kinds)
+        kinds:
+          - page
+      # Field to sort by, such as Date or Title
+      sort_by: 'Date'
+      sort_ascending: false
+      # Default portfolio filter button
+      # 0 corresponds to the first button below and so on
+      # For example, 0 will default to showing all content as the first button below shows content with *any* tag
+      default_button_index: 0
+      # Filter button toolbar (optional).
+      # Add or remove as many buttons as you like.
+      # To show all content, set `tag` to "*".
+      # To filter by a specific tag, set `tag` to an existing tag name.
+      # To remove the button toolbar, delete the entire `buttons` block.
       buttons:
-        - title: Read my latest paper on LLMs
-          icon: arxiv
-          url: https://arxiv.org/abs/2304.01852
-        - title: Watch my new YouTube video to achieve 20x productivity
-          icon: youtube
-          url: https://youtube.com
-        - title: Connect with me on LinkedIn
-          icon: linkedin
-          url: https://linkedin.com
+        - name: All
+          tag: '*'
+        - name: Action
+          tag: Action
+        - name: Adventure
+          tag: Adventure
+        - name: Comedy
+          tag: Comedy
+        - name: Crime and Mystery
+          tag: Crime and Mystery
+        - name: Fantasy
+          tag: Fantasy
+    design:
+      # See Page Builder docs for all section customization options.
+      # Choose how many columns the section has. Valid values: '1' or '2'.
+      columns: '1'
+      # Choose a listing view
+      view: showcase
+      # For Showcase view, flip alternate rows?
+      flip_alt_rows: false
+  - block: features
+    content:
+      title: My Interests
+      subtitle: Section subtitle
+      text: Section text
+      items:
+        - name: R
+          description: 90%
+          icon: r-project
+          icon_pack: fab
+        - name: Statistics
+          description: 100%
+          icon: chart-line
+          icon_pack: fas
+        - name: Photography
+          description: 10%
+          icon: camera-retro
+          icon_pack: fas
   - block: collection
     content:
       title: Latest News
@@ -118,16 +160,4 @@ sections:
         {{% cta cta_link="./people/" cta_text="Backers →" %}}
     design:
       columns: '1'
-
-footer:
-  block: minimal
-  copyright:
-    notice: '© {year} Me. Copyright@2021-2023 FUNON PTE. LTD. | Contact us at hello@funon.xyz'
-    license:
-      enable: true
-      allow_derivatives: false
-      share_alike: false
-      allow_commercial: false
-  # For multilingual sites, show a language chooser in the footer?
-  show_translations: false
 ---

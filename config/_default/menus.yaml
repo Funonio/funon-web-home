@@ -9,11 +9,11 @@ main:
     weight: 10
   - name: Download
     url: download
-    weight: 20
-  - name: About us
-    url: about
     weight: 30
+  - name: About Us
+    url: about
+    weight: 50
   - name: Personal Center
     url: user
-    weight: 40
+    weight: 70
 
