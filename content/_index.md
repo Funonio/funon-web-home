@@ -7,9 +7,9 @@ type: landing
 sections:
   - block: hero
     content:
-      title: 
+      title: Discover Distribute and Store Valuable Mini Drama
       image:
-        filename: cover.1.png
+        filename: cover.vcat.png
       cta:
         label: Download
         url: https://funon.xyz/download/
@@ -19,11 +19,11 @@ sections:
         label: Ask a question
         url: https://discord.gg/z8wNYzc
       text: |
-        <br><br><br>
-        <font size=32>
-        **Discover Distribute and Store Valuable Mini Drama.**
+        <br>
+        <font>
+        FunOn is a Web2-Compatible Decentralized Content Platform aiming to build the backbone infrastructure for the next generation of videos.
         </font>
-        <br><br><br>
+        <br><br>
     design:
       # Choose an optional background color, gradient, image, or video
       css_class: fullscreen
@@ -31,22 +31,21 @@ sections:
         gradient_end: '#FFFFFF'
         gradient_start: '#FFFFFF'
         text_color_light: false
-  - block: slider
+  - block: markdown
     content:
-      slides:
-        - align: center
-          background:
-            image:
-              filename: cover.2.png
-              filters:
-                brightness: 0.0
-            position: center
-            color: '#666'
+      text: |
+        <div class="brand-container">
+          <div class="image-content">
+            <img src="cover.vcat.png">
+          </div>
+          <div class="text-content">
+            <p>Your text goes here. It will be centered in the left side of the container.</p>
+          </div>
+        </div>
     design:
-      slide_height: ''
-      is_fullscreen: true
-      loop: false
-      interval: 2000
+      # See Page Builder docs for all section customization options.
+      # Choose how many columns the section has. Valid values: '1' or '2'.
+      columns: '1'
   - block: portfolio
     id: projects
     content:
