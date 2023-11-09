@@ -7,7 +7,7 @@ type: landing
 sections:
   - block: hero
     content:
-      title: Discover Distribute and Store Valuable Mini Drama
+      title: 
       image:
         filename: cover.vcat.png
       cta:
@@ -18,12 +18,12 @@ sections:
       cta_alt:
         label: Ask a question
         url: https://discord.gg/z8wNYzc
-      text: |
-        <br>
-        <font>
-        FunOn is a Web2-Compatible Decentralized Content Platform aiming to build the backbone infrastructure for the next generation of videos.
-        </font>
-        <br><br>
+      text: | 
+        <br/><br/>
+        **Discover Distribute and Store Valuable Mini Drama.** 
+        <br/><br/>
+        <font color=gray size=3>FunOn is a Web2-Compatible Decentralized Content Platform aiming to build the backbone infrastructure for the next generation of videos.</font>
+        <br/><br/>
     design:
       # Choose an optional background color, gradient, image, or video
       css_class: fullscreen
@@ -36,7 +36,7 @@ sections:
       text: |
         <div class="brand-container">
           <div class="image-content">
-            <img src="cover.vcat.png">
+            <img src="{{ cover.vcat.png }}">
           </div>
           <div class="text-content">
             <p>Your text goes here. It will be centered in the left side of the container.</p>
