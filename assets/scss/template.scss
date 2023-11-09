@@ -12,6 +12,11 @@
 .powered-by {
   display:none;
 }
+
+.footer-license-icons {
+  display:block !important;
+}
+
 .copyright-license-text {
   display:block !important;
 }
@@ -22,4 +27,9 @@
 }
 .home-section.light a {
   color: #000000;
+}
+
+
+.board-media {
+  border-radius: 15px 50px 30px 5px;
 }

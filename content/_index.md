@@ -7,7 +7,8 @@ type: landing
 sections:
   - block: hero
     content:
-      title: 
+      title: |
+        <br>**Discover Distribute and Store Valuable Video**
       image:
         filename: cover.vcat.png
       cta:
@@ -19,14 +20,12 @@ sections:
         label: Ask a question
         url: https://discord.gg/z8wNYzc
       text: | 
-        <br/><br/>
-        **Discover Distribute and Store Valuable Mini Drama.** 
-        <br/><br/>
+        <br/>
         <font color=gray size=3>FunOn is a Web2-Compatible Decentralized Content Platform aiming to build the backbone infrastructure for the next generation of videos.</font>
         <br/><br/>
     design:
-      # Choose an optional background color, gradient, image, or video
       css_class: fullscreen
+      css_style: ''
       background:
         gradient_end: '#FFFFFF'
         gradient_start: '#FFFFFF'
@@ -34,123 +33,52 @@ sections:
   - block: markdown
     content:
       text: |
-        <div class="brand-container">
-          <div class="image-content">
-            <img src="{{ cover.vcat.png }}">
+        <div class="row">
+          <div class="col-12 mx-auto col-md-6 board-media" >
+            <center>
+            {{< figure src="cover.vgirl.png" caption="" numbered="false" style="border-radius: 15px 50px 30px 5px;">}}
+            </center>
           </div>
-          <div class="text-content">
-            <p>Your text goes here. It will be centered in the left side of the container.</p>
+          <div class="col-12 col-md-6 text-center text-md-left">
+            <br/><br/>
+              <h2>Fonon App is a Web3 content aggregator aiming to gather and integrate Web’3 excellent videos to combine with users’ social portraits.</h2>
+            <br/><br/>
+            <font color=gray size=3>
+            push the content that users are interested in , and at the same time, grant NFT copyright to Web3’s article authors,and then commercially promote and profit after gaining user volume.
+            </font>
           </div>
         </div>
     design:
-      # See Page Builder docs for all section customization options.
-      # Choose how many columns the section has. Valid values: '1' or '2'.
       columns: '1'
-  - block: portfolio
-    id: projects
-    content:
-      title: Drama Category
-      filters:
-        # Folders to display content from
-        folders:
-          - project
-        # Only show content with these tags
-        tags: []
-        # Exclude content with these tags
-        exclude_tags: []
-        # Which Hugo page kinds to show (https://gohugo.io/templates/section-templates/#page-kinds)
-        kinds:
-          - page
-      # Field to sort by, such as Date or Title
-      sort_by: 'Date'
-      sort_ascending: false
-      # Default portfolio filter button
-      # 0 corresponds to the first button below and so on
-      # For example, 0 will default to showing all content as the first button below shows content with *any* tag
-      default_button_index: 0
-      # Filter button toolbar (optional).
-      # Add or remove as many buttons as you like.
-      # To show all content, set `tag` to "*".
-      # To filter by a specific tag, set `tag` to an existing tag name.
-      # To remove the button toolbar, delete the entire `buttons` block.
-      buttons:
-        - name: All
-          tag: '*'
-        - name: Action
-          tag: Action
-        - name: Adventure
-          tag: Adventure
-        - name: Comedy
-          tag: Comedy
-        - name: Crime and Mystery
-          tag: Crime and Mystery
-        - name: Fantasy
-          tag: Fantasy
-    design:
-      # See Page Builder docs for all section customization options.
-      # Choose how many columns the section has. Valid values: '1' or '2'.
-      columns: '1'
-      # Choose a listing view
-      view: showcase
-      # For Showcase view, flip alternate rows?
-      flip_alt_rows: false
-  - block: features
-    content:
-      title: My Interests
-      subtitle: Section subtitle
-      text: Section text
-      items:
-        - name: R
-          description: 90%
-          icon: r-project
-          icon_pack: fab
-        - name: Statistics
-          description: 100%
-          icon: chart-line
-          icon_pack: fas
-        - name: Photography
-          description: 10%
-          icon: camera-retro
-          icon_pack: fas
-  - block: collection
-    content:
-      title: Latest News
-      subtitle:
-      text:
-      count: 5
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: post
-    design:
-      view: card
-      columns: '1'
-  
-  - block: markdown
-    content:
-      title:
-      subtitle: ''
-      text:
-    design:
-      columns: '1'
-      background:
-        image: 
-          filename: coders.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
       css_class: fullscreen
-  
+      spacing:
+        padding: ['80px', '0', '80px', '0']
+      background:
+        # image: 
+        #   filename: coders.jpg
+        #   filters:
+        #     brightness: 1
+        #   parallax: false
+        #   position: center
+        #   size: cover
+        text_color_light: false  # Text color (true=light, false=dark, or remove for the dynamic theme color).
+        color: '#FFFFFF'  # Choose a color such as from https://html-color-codes.info
+  - block: hero
+    content:
+      title: |
+        <br><h1>Capture wonders in life</h1>
+      image:
+        filename: cover.vboy.png
+      text: | 
+        <br/>
+        <font color=gray size=3>Record moments in life with fun props and easy editing.</font>
+        <br/><br/>
+    design:
+      css_class: fullscreen
+      css_style: ''
+      background:
+        color: '#FFFFFF'
+        text_color_light: false
   - block: markdown
     content:
       title:
